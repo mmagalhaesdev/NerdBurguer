@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Funcionário</title>
+    <link rel="stylesheet" href="../Controller/css/style.css">
+</head>
+<body>
+      <header>
+        <div class="container">
+             <div class="menu">
+                <ul>
+                    <li><a href="../Controller/formularioCadastro.html">Cadastro</a></li>
+                    <li><a href="../View/home.html">Home</a></li>
+                    <li><a href="../Controller/formularioLogin - Cliente.html">Delivery</a></li>
+                </ul>
+             </div>
+
+        </div>
+    </header>
+    <div class="cadastro">
+        <form action="../Model/loginFuncionario.php" method="post">
+            <h1>Funcionário</h1>
+            <br>
+            <div class="dados">
+                <label for="campo_email">Insira seu email:</label>
+                <br>
+                <input id="campo_email" name="email" type="email" placeholder="Digite seu email aqui" required>
+                <br>
+                <br>
+                <label for="campo_senha">Insira sua senha:</label>
+                <br>
+                <input id="campo_senha" type="password" name="senha" placeholder="Digite sua senha aqui" required>
+                <br>
+            </div>
+            <br>
+            <div class="button">
+                <input type="submit" value="Entrar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

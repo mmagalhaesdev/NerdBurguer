@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="../View/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+             <div class="menu">
+                <ul>
+                    <li><a href="../View/home.html">Home</a></li>
+                    <li><a href="../Controller/formularioLogin - Cliente.html">Delivery</a></li>
+                    <li><a href="formularioLogin -Funcionário.html">Funcionários</a></li>
+                </ul>
+             </div>
+
+        </div>
+    </header>
+    <div class="cadastro">
+        <form action="../Model/cadastro.php" method="post">
+            <h1>Cadastro:</h1>
+            <br>
+            <label for="campo_nome">Insira seu nome:</label>
+            <br>
+            <input id="campo_nome" name="nome" type="text" placeholder="Digite seu nome aqui" required>
+            <br>
+            <br>
+            <label for="campo_email">Insira seu email:</label>
+            <br>
+            <input id="campo_email" name="email" type="email" placeholder="Digite seu email aqui" required>
+            <br>
+            <br>
+            <label for="campo_senha">Insira sua senha:</label>
+            <br>
+            <input id="campo_senha" type="password" name="senha" placeholder="Digite sua senha aqui" required>
+            <br>
+            <br>
+            <label for="campo_endereco">Insira seu endereço:</label>
+            <br>
+            <input id="campo_endereco" type="text" name="endereco" placeholder="Digite endereço aqui" required>
+            <br>
+            <br>
+            <div class="button">
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
